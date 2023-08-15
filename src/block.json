@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/scrollable-immage",
+	"version": "0.1.0",
+	"title": "Scrollable Immage",
+	"category": "widgets",
+	"icon": "format-gallery",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"images": {
+			"type": "array",
+			"default": []
+		},
+		"pauseOnHover": {
+			"type": "boolean",
+			"default": false
+		},
+		"direction": {
+			"type": "string",
+			"default": "left",
+			"enum": [
+				"left",
+				"right"
+			]
+		}
+	},
+	"textdomain": "scrollable-immage",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
